@@ -133,7 +133,7 @@ def normal_card_template_afmt(fg: FieldGroup):
             <div class="definition_en">{fg.definition_en}</div>
             <div class="exam_type">{fg.exam_type}</div>
         </td>
-        <td style="width: 33%;">
+        <td class="img">
             {fg.image}
         </td>
     </tr>
@@ -255,6 +255,15 @@ img {
 }
 tr {
   vertical-align: top;
+}
+.win .img {
+  width: 33%;
+}
+.mac .img {
+  width: 33%;
+}
+.mobile .img {
+  width: 0;
 }
 """
 
