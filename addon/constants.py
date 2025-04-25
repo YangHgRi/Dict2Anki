@@ -78,8 +78,7 @@ def normal_card_template_qfmt(fg: FieldGroup):
 <table>
     <tr>
         <td>
-            <h1 class="term">{{{{term}}}}</h1>
-            <span>{fg.pronunciation}</span>
+            <h1 class="term">{{{{term}}}} {fg.pronunciation}</h1>
             <div class="pronounce">
                 <span class="phonetic">UK[{{{{uk}}}}]</span>
                 <span class="phonetic">US[{{{{us}}}}]</span>
@@ -125,8 +124,7 @@ def normal_card_template_afmt(fg: FieldGroup):
 <table>
     <tr>
         <td>
-        <h1 class="term">{{{{term}}}}</h1>
-            <span>{fg.pronunciation}</span>
+        <h1 class="term">{{{{term}}}} {fg.pronunciation}</h1>
             <div class="pronounce">
                 <span class="phonetic">UK[{{{{uk}}}}]</span>
                 <span class="phonetic">US[{{{{us}}}}]</span>
