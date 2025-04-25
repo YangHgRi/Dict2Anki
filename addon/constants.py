@@ -84,7 +84,7 @@ def normal_card_template_qfmt(fg: FieldGroup):
                 <span class="phonetic">UK[{{{{uk}}}}]</span>
                 <span class="phonetic">US[{{{{us}}}}]</span>
             </div>
-            <div class="definition">Tap To View</div>
+            <div class="definition"></div>
             <div class="definition_en"></div>
         </td>
         <td style="width: 33%;">
@@ -93,9 +93,9 @@ def normal_card_template_qfmt(fg: FieldGroup):
 </table>
 <div class="divider"></div>
 <table>
-    <tr><td class="phrase">{fg.phrase[0][0]}</td><td>{fg.phrase[0][2]}</td></tr>
-    <tr><td class="phrase">{fg.phrase[1][0]}</td><td>{fg.phrase[1][2]}</td></tr>
-    <tr><td class="phrase">{fg.phrase[2][0]}</td><td>{fg.phrase[2][2]}</td></tr>
+    <tr><td class="phrase">{fg.phrase[0][0]}</td></tr>
+    <tr><td class="phrase">{fg.phrase[1][0]}</td></tr>
+    <tr><td class="phrase">{fg.phrase[2][0]}</td></tr>
 </table>
 <table>
     <tr>
@@ -103,21 +103,18 @@ def normal_card_template_qfmt(fg: FieldGroup):
             {fg.sentence[0][0]}
             {fg.sentence[0][3]}
         </td>
-        <td>{fg.sentence[0][2]}</td>
     </tr>
     <tr>
         <td class="sentence">
             {fg.sentence[1][0]}
             {fg.sentence[1][3]}
         </td>
-        <td>{fg.sentence[1][2]}</td>
     </tr>
     <tr>
         <td class="sentence">
             {fg.sentence[2][0]}
             {fg.sentence[2][3]}
         </td>
-        <td>{fg.sentence[2][2]}</td>
     </tr>
 </table>
 """
