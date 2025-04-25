@@ -20,8 +20,6 @@ MODEL_FIELDS = [
     'uk', 'us',
     'phrase0', 'phrase1', 'phrase2', 'phrase_explain0', 'phrase_explain1', 'phrase_explain2',
     'sentence0', 'sentence1', 'sentence2', 'sentence_explain0', 'sentence_explain1', 'sentence_explain2', 'sentence_speech0', 'sentence_speech1', 'sentence_speech2',
-    'pplaceHolder0', 'pplaceHolder1', 'pplaceHolder2',
-    'splaceHolder0', 'splaceHolder1', 'splaceHolder2',
     'image', 'pronunciation',
     'group', 'exam_type', 'modifiedTime',
 ]
@@ -34,14 +32,14 @@ class FieldGroup:
         self.image = "{{image}}"
         self.pronunciation = "{{pronunciation}}"
         self.phrase = [
-            ("{{phrase0}}", "{{phrase_explain0}}", "{{pplaceHolder0}}"),
-            ("{{phrase1}}", "{{phrase_explain1}}", "{{pplaceHolder1}}"),
-            ("{{phrase2}}", "{{phrase_explain2}}", "{{pplaceHolder2}}"),
+            ("{{phrase0}}", "{{phrase_explain0}}"),
+            ("{{phrase1}}", "{{phrase_explain1}}"),
+            ("{{phrase2}}", "{{phrase_explain2}}"),
         ]
         self.sentence = [
-            ("{{sentence0}}", "{{sentence_explain0}}", "{{splaceHolder0}}", '{{sentence_speech0}}'),
-            ("{{sentence1}}", "{{sentence_explain1}}", "{{splaceHolder1}}", '{{sentence_speech1}}'),
-            ("{{sentence2}}", "{{sentence_explain2}}", "{{splaceHolder2}}", '{{sentence_speech2}}'),
+            ("{{sentence0}}", "{{sentence_explain0}}", '{{sentence_speech0}}'),
+            ("{{sentence1}}", "{{sentence_explain1}}", '{{sentence_speech1}}'),
+            ("{{sentence2}}", "{{sentence_explain2}}", '{{sentence_speech2}}'),
         ]
         self.exam_type = "{{exam_type}}"
 
@@ -100,19 +98,19 @@ def normal_card_template_qfmt(fg: FieldGroup):
     <tr>
         <td class="sentence">
             {fg.sentence[0][0]}
-            {fg.sentence[0][3]}
+            {fg.sentence[0][2]}
         </td>
     </tr>
     <tr>
         <td class="sentence">
             {fg.sentence[1][0]}
-            {fg.sentence[1][3]}
+            {fg.sentence[1][2]}
         </td>
     </tr>
     <tr>
         <td class="sentence">
             {fg.sentence[2][0]}
-            {fg.sentence[2][3]}
+            {fg.sentence[2][2]}
         </td>
     </tr>
 </table>
@@ -148,7 +146,7 @@ def normal_card_template_afmt(fg: FieldGroup):
     <tr>
         <td class="sentence">
             {fg.sentence[0][0]}
-            {fg.sentence[0][3]}
+            {fg.sentence[0][2]}
         </td>
     </tr>
     <tr>
@@ -157,7 +155,7 @@ def normal_card_template_afmt(fg: FieldGroup):
     <tr>
         <td class="sentence">
             {fg.sentence[1][0]}
-            {fg.sentence[1][3]}
+            {fg.sentence[1][2]}
         </td>
     </tr>
     <tr>
@@ -166,7 +164,7 @@ def normal_card_template_afmt(fg: FieldGroup):
     <tr>
         <td class="sentence">
             {fg.sentence[2][0]}
-            {fg.sentence[2][3]}
+            {fg.sentence[2][2]}
         </td>
     </tr>
     <tr>

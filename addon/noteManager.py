@@ -310,8 +310,6 @@ def addNoteToDeck(deck, model, config: dict, word: dict, whichPron: str, existin
             setNoteFieldValue(note, key, value, isNewNote, overwrite)
             key, value = f'phrase_explain{i}', phrase_tuple[1]
             setNoteFieldValue(note, key, value, isNewNote, overwrite)
-            key, value = f'pplaceHolder{i}', "Tap To View"
-            setNoteFieldValue(note, key, value, isNewNote, overwrite)
             # note[f'phrase{i}'], note[f'phrase_explain{i}'] = phrase_tuple
             # note[f'pplaceHolder{i}'] = "Tap To View"
 
@@ -328,8 +326,6 @@ def addNoteToDeck(deck, model, config: dict, word: dict, whichPron: str, existin
             key, value = f'sentence{i}', sentence_tuple[0]
             setNoteFieldValue(note, key, value, isNewNote, s_overwrite)
             key, value = f'sentence_explain{i}', sentence_tuple[1]
-            setNoteFieldValue(note, key, value, isNewNote, s_overwrite)
-            key, value = f'splaceHolder{i}', "Tap To View"
             setNoteFieldValue(note, key, value, isNewNote, s_overwrite)
             key, value = f'sentence_speech{i}', f'<a onclick="this.firstChild.play()"><audio src="{sentence_tuple[2]}"></audio>▶︎</a>'
             setNoteFieldValue(note, key, value, isNewNote, s_overwrite)
