@@ -150,6 +150,8 @@ def normal_card_template_afmt(fg: FieldGroup):
             {fg.sentence[0][0]}
             {fg.sentence[0][3]}
         </td>
+    </tr>
+    <tr>
         <td>{fg.sentence[0][1]}</td>
     </tr>
     <tr>
@@ -157,6 +159,8 @@ def normal_card_template_afmt(fg: FieldGroup):
             {fg.sentence[1][0]}
             {fg.sentence[1][3]}
         </td>
+    </tr>
+    <tr>
         <td>{fg.sentence[1][1]}</td>
     </tr>
     <tr>
@@ -164,6 +168,8 @@ def normal_card_template_afmt(fg: FieldGroup):
             {fg.sentence[2][0]}
             {fg.sentence[2][3]}
         </td>
+    </tr>
+    <tr>
         <td>{fg.sentence[2][1]}</td>
     </tr>
 </table>
