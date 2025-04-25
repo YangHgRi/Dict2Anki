@@ -39,9 +39,9 @@ class FieldGroup:
             ("{{phrase2}}", "{{phrase_explain2}}", "{{pplaceHolder2}}"),
         ]
         self.sentence = [
-            ("{{sentence0}}", "{{sentence_explain0}}", "{{splaceHolder0}}", '<a onclick="this.firstChild.play()"><audio src="{{sentence_speech0}}"></audio>▶︎</a>'),
-            ("{{sentence1}}", "{{sentence_explain1}}", "{{splaceHolder1}}", '<a onclick="this.firstChild.play()"><audio src="{{sentence_speech1}}"></audio>▶︎</a>'),
-            ("{{sentence2}}", "{{sentence_explain2}}", "{{splaceHolder2}}", '<a onclick="this.firstChild.play()"><audio src="{{sentence_speech2}}"></audio>▶︎</a>'),
+            ("{{sentence0}}", "{{sentence_explain0}}", "{{splaceHolder0}}", '{{sentence_speech0}}'),
+            ("{{sentence1}}", "{{sentence_explain1}}", "{{splaceHolder1}}", '{{sentence_speech1}}'),
+            ("{{sentence2}}", "{{sentence_explain2}}", "{{splaceHolder2}}", '{{sentence_speech2}}'),
         ]
         self.exam_type = "{{exam_type}}"
 
